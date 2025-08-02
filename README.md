@@ -69,12 +69,12 @@ graph TD
   A[Mobile App (React Native)]
   B[Node.js/Express API]
   C[Firebase Auth]
-  D[Supabase DB]
+  D[Supabase/PostgreSQL DB]
   E[Mock AI Engine]
-  F[Sales Forecasting]
-  G[Anomaly Detection]
-  H[Customer Clustering]
-  I[Power Dashboard (WebView)]
+  F[Sales Forecasting Module]
+  G[Anomaly Detection Module]
+  H[Customer Clustering Module]
+  I[Dashboard (WebView/React Native Web)]
 
   A --> B
   B --> C

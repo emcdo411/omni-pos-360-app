@@ -1,185 +1,148 @@
-# 🔄 OmniPOS360 — AI-Enhanced POS System Simulation
+# 🔄 OmniPOS360
 
-![React Native](https://img.shields.io/badge/Framework-React%20Native-61DAFB?style=for-the-badge&logo=react)
+> A mobile-first, AI-augmented Point of Sale (POS) simulation built with React Native and Expo — built to demonstrate enterprise-ready POS capabilities for modern TPM-led conversations.
+
+![React Native](https://img.shields.io/badge/Frontend-React%20Native-61DAFB?style=for-the-badge&logo=react)
 ![Expo](https://img.shields.io/badge/Mobile-Expo-000020?style=for-the-badge&logo=expo)
-![Firebase](https://img.shields.io/badge/Backend-Firebase-FFCA28?style=for-the-badge&logo=firebase)
 ![TailwindCSS](https://img.shields.io/badge/Styling-TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss)
-![AI Simulated](https://img.shields.io/badge/AI-Features%20Simulated-blueviolet?style=for-the-badge&logo=OpenAI)
-![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-black?style=for-the-badge&logo=github)
-
-> 🧠 *A real-time, AI-enhanced POS experience for restaurants and retailers—built to impress Technical Program Managers and AI-first leaders.*
+![Node.js](https://img.shields.io/badge/API-Node.js-339933?style=for-the-badge&logo=nodedotjs)
+![Firebase](https://img.shields.io/badge/Backend-Firebase-FFCA28?style=for-the-badge&logo=firebase)
+![Supabase](https://img.shields.io/badge/Database-Supabase-3ECF8E?style=for-the-badge&logo=supabase)
+![GitHub Actions](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions)
+![Docker](https://img.shields.io/badge/DevOps-Docker-2496ED?style=for-the-badge&logo=docker)
+![AI Simulated](https://img.shields.io/badge/AI%20Modules-Simulated-blueviolet?style=for-the-badge&logo=openai)
 
 ---
 
 ## 📚 Table of Contents
 
-- [🚀 Overview](#-overview)
-- [⚙️ Features](#️-features)
-- [📐 Architecture](#-architecture)
-- [🧠 AI Modules](#-ai-modules)
-- [🧩 Tech Stack](#-tech-stack)
-- [📊 Business Use Case](#-business-use-case)
-- [📎 Mermaid Diagrams](#-mermaid-diagrams)
-- [📁 File Structure](#-file-structure)
-- [📲 Getting Started](#-getting-started)
-- [📄 License](#-license)
+- [Overview](#-overview)
+- [Features](#-features)
+- [Architecture](#-architecture)
+- [AI Modules](#-ai-modules)
+- [Tech Stack](#-tech-stack)
+- [Screenshots](#-screenshots)
+- [Getting Started](#-getting-started)
+- [For TPMs](#-for-tpms)
+- [License](#-license)
 
 ---
 
-## 🚀 Overview
+## 📖 Overview
 
-**OmniPOS360** is a full-featured Point of Sale (POS) simulation built in **React Native** using **Expo**, designed to show how modern AI/ML capabilities can power up business operations, sales forecasting, and fraud detection—at the edge and in real time.
+**OmniPOS360** is a simulated enterprise-grade POS solution tailored for modern retail or food service operations. Designed for both mobile and web environments, it showcases:
 
-It's modular, offline-first, and built for stakeholder storytelling.
-
----
-
-## ⚙️ Features
-
-- 🔐 Role-based login (Admin, Manager, Cashier)
-- 🛒 Product catalog & cart logic
-- 🧾 QR/barcode scanner + mock printer logic
-- 📶 Offline-first sync queue
-- 📈 Live dashboards with AI-simulated metrics
-- 🌍 Expo + Web + Mobile support
+- **Offline-first sales and sync simulation**
+- **Real-time dashboards**
+- **AI-augmented business intelligence**
+- **TPM-ready design language**
 
 ---
 
-## 📐 Architecture
+## ✨ Features
 
-```mermaid
-flowchart TD
-    UI[React Native UI] --> API[Simulated REST API (Node.js/Firebase)]
-    API --> DB[(Firebase / Supabase)]
-    DB --> AI[Embedded AI Logic]
-    AI --> Dashboard[Realtime React Dashboard]
-    subgraph Device
-      UI
-    end
-````
+- 🔐 Role-based login (Cashier / Manager / Admin)
+- 🛒 Product Catalog + QR/Barcode Scanning
+- 🧾 Checkout Simulation w/ Tax, Receipt & Sync
+- 🚫 Offline Mode with Queueing + Re-Sync
+- 📊 Real-Time AI Dashboard with Insights
+- 📦 Inventory + Daily Sales Closeout Module
 
 ---
 
 ## 🧠 AI Modules
 
-1. **Sales Forecasting**
+> All modules simulated with mock JSON responses, toggled via AI Mode switch.
 
-   * Based on historical mock data
-   * UI toggle to enable/disable
-   * Triggers real-time prediction updates
+| Module              | Description                                      |
+|---------------------|--------------------------------------------------|
+| Sales Forecasting   | Prophet-style trend prediction from SKU logs     |
+| Fraud Detection     | KNN or Isolation Forest for anomaly flagging     |
+| Customer Clustering | K-Means on recent purchase and visit frequency   |
 
-2. **Fraud Detection**
+---
 
-   * Simulated Isolation Forest logic
-   * Flags anomalies over a certain threshold
+## 🏗️ Architecture
 
-3. **Customer Clustering**
-
-   * K-Means logic on historical sales
-   * Groups visualized by behavior types
+```mermaid
+graph TD
+  A[Mobile App (React Native)] --> B[Node.js/Express API]
+  B --> C[Firebase Auth]
+  B --> D[Supabase DB]
+  B --> E[Mock AI Engine]
+  E --> F[Sales Forecasting]
+  E --> G[Anomaly Detection]
+  E --> H[Customer Clustering]
+  D --> I[Power Dashboard (WebView)]
+  A --> I
+````
 
 ---
 
 ## 🧩 Tech Stack
 
-* **Frontend:** React Native + TailwindCSS
-* **Backend:** Firebase / Node.js (Simulated APIs)
-* **AI Logic:** `prophet`, `isotree`, `kmeans` (simulated with JSON)
-* **DevOps:** GitHub Actions + optional Docker
+![React Native](https://img.shields.io/badge/Frontend-React%20Native-61DAFB?style=for-the-badge\&logo=react)
+![Expo](https://img.shields.io/badge/Mobile-Expo-000020?style=for-the-badge\&logo=expo)
+![TailwindCSS](https://img.shields.io/badge/Styling-TailwindCSS-06B6D4?style=for-the-badge\&logo=tailwindcss)
+![Node.js](https://img.shields.io/badge/API-Node.js-339933?style=for-the-badge\&logo=nodedotjs)
+![Firebase](https://img.shields.io/badge/Backend-Firebase-FFCA28?style=for-the-badge\&logo=firebase)
+![Supabase](https://img.shields.io/badge/Database-Supabase-3ECF8E?style=for-the-badge\&logo=supabase)
+![GitHub Actions](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF?style=for-the-badge\&logo=githubactions)
+![Docker](https://img.shields.io/badge/DevOps-Docker-2496ED?style=for-the-badge\&logo=docker)
+![AI Simulated](https://img.shields.io/badge/AI%20Modules-Simulated-blueviolet?style=for-the-badge\&logo=openai)
 
 ---
 
-## 📊 Business Use Case
+## 🖼️ Screenshots
 
-📌 **If I were the TPM for a 17-location rollout**, I’d focus on:
-
-* Ensuring sales don’t halt during outages (offline queue)
-* Scaling inventory sync via Firebase triggers
-* Using AI forecasts to plan staffing and prep
-* Monitoring for transaction fraud centrally
-* Quickly onboarding employees via role-based UI
-
-💡 Add-on: Custom Notion playbook titled:
-
-> “17-Store AI POS Deployment: Timeline, Risk, and Value Storytelling”
+> Coming soon: include Expo mobile preview GIF and real-time dashboard UI here.
 
 ---
 
-## 📎 Mermaid Diagrams
+## 🚀 Getting Started
 
-### AI Fraud Flow
+```bash
+# Clone
+git clone https://github.com/yourusername/omnipos360.git
+cd omnipos360
 
-```mermaid
-graph TD
-A[New Transaction] --> B{Exceeds Threshold?}
-B -- Yes --> C[Flag as Anomaly]
-B -- No --> D[Approve]
-```
+# Install dependencies
+npm install
 
-### Sales Forecasting
-
-```mermaid
-graph TD
-DayStart --> LoadData --> ProphetSimulate --> UpdateChart
+# Run in Expo
+npx expo start
 ```
 
 ---
 
-## 📁 File Structure
+## 🧭 For TPMs
 
-```
-OmniPOS360/
-├── /assets/
-├── /components/
-│   ├── Login.js
-│   ├── ProductList.js
-│   ├── Cart.js
-│   └── AIChart.js
-├── /data/
-│   ├── mock_sales.json
-│   └── fraud_flags.json
-├── /screens/
-│   ├── Dashboard.js
-│   └── Inventory.js
-├── App.js
-└── README.md
-```
+> Real-World Questions Answered in the README supplement:
 
----
+* How does the app handle internet downtime in stores?
+* How scalable is this architecture for 17+ locations?
+* Where are the failover points in the sync logic?
+* How are AI outputs validated in mock pipelines?
+* Could the AI modules be externalized via microservices?
 
-## 📲 Getting Started
+Also includes a **Notion PDF** titled:
 
-1. Clone the repo:
-
-   ```bash
-   git clone https://github.com/yourname/OmniPOS360.git
-   cd OmniPOS360
-   ```
-
-2. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-3. Run the project:
-
-   ```bash
-   npx expo start
-   ```
+📌 *"If I Were the TPM Overseeing a 17-Store POS Rollout..."*
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
 ---
 
-> Made with ⚡ and caffeine by **Erwin Maurice McDonald** — built for innovation storytelling and technical fluency.
+> Designed with real-world TPM, AI productization, and mobile performance in mind.
+> Inspired by the future of embedded analytics, agent workflows, and AI-first customer experiences.
 
 ```
 
-Let me know if you'd like a downloadable Notion page or sample `.json` files to accompany the AI logic!
+---
+
+Let me know when you want to push this into a file or connect it to a real repo. I can also generate the PDF supplement for TPMs.
 ```

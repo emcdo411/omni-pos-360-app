@@ -85,7 +85,6 @@ graph TD
   E --> H
   D --> I
   A --> I
-
 ````
 
 ---
@@ -106,7 +105,27 @@ graph TD
 
 ## 🖼️ Screenshots
 
-> Coming soon: include Expo mobile preview GIF and real-time dashboard UI here.
+### 📊 Dashboard Overview
+
+Displays real-time metrics on daily sales, items sold, customers, and growth — optimized for quick role-based decisioning.
+
+![Dashboard](https://raw.githubusercontent.com/yourusername/omnipos360/main/assets/screenshots/Screenshot%202025-08-01%20224416.png)
+
+---
+
+### 🧾 Point of Sale Workflow
+
+Simulates real-world cashier checkout interaction with dynamic pricing, tax calculation, and itemized cart view.
+
+![Point of Sale](https://raw.githubusercontent.com/yourusername/omnipos360/main/assets/screenshots/Screenshot%202025-08-01%20224500.png)
+
+---
+
+### 🧪 Barcode Scanner Module
+
+Simulated scanner that mimics retail input hardware, includes scan logs and quick-code demos.
+
+![Barcode Scanner](https://raw.githubusercontent.com/yourusername/omnipos360/main/assets/screenshots/Screenshot%202025-08-01%20224957.png)
 
 ---
 
@@ -155,5 +174,9 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 ---
 
-Let me know when you want to push this into a file or connect it to a real repo. I can also generate the PDF supplement for TPMs.
+🔧 Replace `yourusername` in the raw URLs with your actual GitHub username (e.g., `emcdo411`) once you push the screenshots to the appropriate repo path:  
+`/assets/screenshots/`.
+
+Let me know if you want me to generate those image paths automatically or create the zipped `assets/screenshots` folder for you to upload.
 ```
+

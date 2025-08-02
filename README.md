@@ -66,15 +66,15 @@
 
 ```mermaid
 graph TD
-  A[Mobile App (React Native)]
-  B[Node.js/Express API]
-  C[Firebase Auth]
-  D[Supabase/PostgreSQL DB]
-  E[Mock AI Engine]
-  F[Sales Forecasting Module]
-  G[Anomaly Detection Module]
-  H[Customer Clustering Module]
-  I[Dashboard (WebView/React Native Web)]
+  A[Mobile App - React Native]
+  B[Backend API - Node Express]
+  C[Auth Service - Firebase]
+  D[Database - Supabase or PostgreSQL]
+  E[AI Engine - Mock Logic]
+  F[Sales Forecasting]
+  G[Anomaly Detection]
+  H[Customer Clustering]
+  I[Dashboard - WebView or RN Web]
 
   A --> B
   B --> C
